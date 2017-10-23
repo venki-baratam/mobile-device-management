@@ -37,7 +37,7 @@ public class User extends AbstractAuditable {
 	@NotNull
 	@Length(max = 100)
 	private String name;
-
+ 
 	@NotNull
 	@Length(max = 10)
 	private String mobile;
@@ -49,5 +49,17 @@ public class User extends AbstractAuditable {
 	@NotNull
 	@Length(max = 256)
 	private String address;
+
+	@Override
+	public Long getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected void setId(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

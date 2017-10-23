@@ -51,14 +51,14 @@ public class MobileController {
 		return new ModelAndView("mobile-registration-success", "command", model);
 	}
 
-	@RequestMapping("/_viewSearch")
+	@RequestMapping("/_view")
 	public ModelAndView showViewSearchForm(Model model) {
 		model.addAttribute("action", "_view");
 		model.addAttribute("mobiles", mobileService.getAll());
 		return new ModelAndView("mobile-view-search", "command", model);
 	}
 
-	@RequestMapping(value = "/_view/{id}", method = RequestMethod.POST)
+	@RequestMapping(value = "/view/{id}", method = RequestMethod.POST)
 	public ModelAndView view(@PathVariable("id") final Integer id, Model model) {
 		Mobile mobile = mobileService.getById(id.longValue()).get();
 		prepareNewForm(model);

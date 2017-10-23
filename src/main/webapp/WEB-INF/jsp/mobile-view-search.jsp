@@ -48,7 +48,7 @@
 <script type="text/javascript">
 	function onSubmit() {
 		if (document.getElementById("mobile").value) {
-			document.forms[0].action = "/mdm/mobile/_view/"
+			document.forms[0].action = "/mdm/mobile/view/"
 					+ document.getElementById("mobile").value;
 			document.forms[0].submit();
 		} else
