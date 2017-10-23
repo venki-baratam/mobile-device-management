@@ -50,16 +50,4 @@ public class User extends AbstractAuditable {
 	@Length(max = 256)
 	private String address;
 
-	@Override
-	public Long getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected void setId(Long id) {
-		// TODO Auto-generated method stub
-		
-	}
-
 }
