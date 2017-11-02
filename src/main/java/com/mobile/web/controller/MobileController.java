@@ -48,7 +48,7 @@ public class MobileController {
 
 		model.addAttribute("successMessage", "Mobile created successfully with name  " + mobile.getName());
 
-		return new ModelAndView("mobile-registration-success", "command", model);
+		return new ModelAndView("mobile-success", "command", model);
 	}
 
 	@RequestMapping("/_view")

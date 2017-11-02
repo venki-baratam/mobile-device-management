@@ -12,6 +12,6 @@ import com.mobile.persistence.entity.UserMobileMap;
 @Repository
 public interface UserMobileMapRepository extends JpaRepository<UserMobileMap, Long> {
 
-	@Query("select um.mobile from UserMobileMap um where um.user.id=:userId order by um.mobile.name")
+	@Query("select um.mobile from UserMobileMap um where um.assigned = true and um.user.id=:userId order by um.mobile.name")
 	List<Mobile> getAssgnedMobileByUserId(Long userId);
 }

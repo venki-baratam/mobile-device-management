@@ -60,15 +60,4 @@ public class Mobile extends AbstractAuditable {
 	@NotNull
 	@Length(max = 256)
 	private String imei;
-
-	@Override
-	public Long getId() {
-		return id;
-	}
-
-	@Override
-	protected void setId(Long id) {
-
-	}
-
 }
